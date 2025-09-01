@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhyuday Bharat Mega Defense Cluster LLP | Advanced Defense Solutions</title>
+    <title>Abhyuday Bharat Defense Cluster LLP | Advanced Defense Solutions</title>
     <meta name="description" content="Leading provider of cutting-edge defense solutions and industrial clusters. Trusted by government and military organizations worldwide.">
     
     <!-- Favicon -->
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -21,21 +21,22 @@
     <style>
         /* ========== Global Styles ========== */
         :root {
-           /*  --primary: #0d1a26;*/       /* Dark navy blue */
-           --primary: #236130ff;
-            --secondary: #1e3a5f;     /* Medium blue */
-            --accent: #d4af37;       /* Military gold */
-            --accent-dark: #b38f2b;
-            --light: #e8e8e8;         /* Off-white */
-             /*--dark: #0a0f16;   */      
-             --dark: #236130ff;
-            --text: #c9d1d9;
-            --text-dark: #8b949e;
-           /* --bg-gradient: linear-gradient(135deg, #0d1a26 0%, #0a0f16 100%); */
-           --bg-gradient: linear-gradient(135deg,  #09140bff 0%,  #3dac4fe5 100%);
-           /* --card-bg: rgba(30, 58, 95, 0.2); */
-           --card-bg: rgba(47, 87, 68, 0.42);
-            --card-border: rgba(212, 175, 55, 0.3);
+            --primary: #236130ff;      /* Your original green */
+            --secondary: #2e7d32;     /* Vibrant green */
+            --accent: #4caf50;        /* Fresh green */
+            --accent-dark: #388e3c;
+            --light: #ffffff;         /* Pure white */
+            --dark: #1b5e20;          /* Dark green */
+            --text: #2e3a40;         /* Dark gray for text */
+            --text-light: #546e7a;    /* Lighter gray */
+            --bg-color: #f5fdf6;      /* Very light green background */
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --card-border: rgba(76, 175, 80, 0.3);
+            --header-footer-bg: #236130ff; /* Your original green */
+            --highlight: #8bc34a;     /* Light green highlight */
+            --gradient-green: linear-gradient(135deg, #236130ff 0%, #4CAF50 100%);
+             --gradient-green: linear-gradient(135deg, #236130ff 0%, #4CAF50 100%);
+            --section-padding: 80px; /* Added for consistent spacing */
         }
         
         * {
@@ -45,21 +46,18 @@
         }
         
         body {
-           
-             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
-            background: var(--bg-gradient);
-            background-attachment: fixed;
-            background-size: cover;
-             }
+            background-color: var(--bg-color);
+        }
         
         h1, h2, h3, h4, h5, h6 {
             font-family: /*'Orbitron',*/ sans-serif;
             font-weight: 600;
             letter-spacing: 1px;
-            color: var(--light);
+            color: var(--dark);
         }
         
         a {
@@ -69,7 +67,8 @@
         }
         
         a:hover {
-            color: white;
+            color: var(--accent-dark);
+            text-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
         }
         
         .container {
@@ -94,20 +93,22 @@
         
         .btn-primary {
             background-color: var(--accent);
-            color: var(--dark);
+            color: white;
             border: 1px solid var(--accent);
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
         }
         
         .btn-primary:hover {
             background-color: var(--accent-dark);
-            color: var(--dark);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+            color: white;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+            transform: translateY(-2px);
         }
         
         .section {
             padding: 100px 0;
             position: relative;
+            background-color: var(--light);
         }
         
         .section-title {
@@ -115,6 +116,7 @@
             margin-bottom: 30px;
             position: relative;
             display: inline-block;
+            color: var(--dark);
         }
         
         .section-title:after {
@@ -137,17 +139,16 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-           /*  background-color: rgba(13, 26, 38, 0.9);*/
-            background-color: rgba(45, 80, 31, 0.32);
+            background-color: var(--header-footer-bg);
             transition: all 0.3s ease;
             backdrop-filter: blur(5px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            border-bottom: 2px solid var(--highlight);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
         }
         
         header.scrolled {
-           /* background-color: rgba(13, 26, 38, 0.98);*/
-             background-color: 236130ff;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            background-color: var(--header-footer-bg);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
             padding: 5px 0;
         }
         
@@ -165,16 +166,16 @@
         
         .logo img {
             height: 50px;
-            filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
+            filter: drop-shadow(0 0 5px rgba(139, 195, 74, 0.5));
         }
         
         .logo-text {
             margin-left: 10px;
-            color: var(--light);
+            color: white;
             font-family: /*'Orbitron',*/ sans-serif;
             font-size: 1.5rem;
             font-weight: 700;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
         
         nav ul {
@@ -188,24 +189,40 @@
         }
         
         nav ul li a {
-            color: var(--light);
+            color: white;
             font-weight: 500;
             letter-spacing: 1px;
             font-family: /*'Orbitron',*/ sans-serif;
             font-size: 0.9rem;
             text-transform: uppercase;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--highlight);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
         }
         
         nav ul li a:hover {
-            color: var(--accent);
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            color: white;
         }
         
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
-            color: var(--light);
+            color: white;
             font-size: 1.5rem;
             cursor: pointer;
         }
@@ -238,27 +255,30 @@
             z-index: 1;
         }
         
-      .hero-content {
-    position: absolute;          /* Position it over the image */
-    bottom: 30px;                /* Distance from the bottom */
-    right: 30px;                 /* Distance from the right */
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 30px;          /* Less vertical padding, more horizontal */
-    border-radius: 10px;
-    text-align: right;
-    max-width: 80%;              /* Make it wider (adjust as needed) */
-}
+        .hero-content {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            color: white;
+            background-color: rgba(136, 141, 136, 0.47);
+            padding: 25px 40px;
+            border-radius: 10px;
+            text-align: right;
+            max-width: 80%;
+            border-left: 4px solid var(--highlight);
+        }
         
         .hero-content h1 {
             font-size: 3rem;
             margin-bottom: 10px;
             animation: fadeIn 1s ease;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         
         .hero-content p {
             font-size: 1.2rem;
             animation: fadeIn 1s ease 0.2s both;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         @keyframes fadeIn {
@@ -286,16 +306,43 @@
         }
         
         .slider-dot.active {
-            background: var(--accent);
+            background: var(--highlight);
             transform: scale(1.3);
+            box-shadow: 0 0 10px var(--highlight);
         }
         
         /* ========== About Section ========== */
-        .about {
-            background: var(--bg-gradient);
+     .about {
+            background: var(--gradient-green);
             position: relative;
             overflow: hidden;
+            border-radius: 20px; /* Rounded corners */
+            margin: 40px 20px; /* Space around the green background */
+            color: white; /* Force all text to white */
         }
+
+        .about .container {
+            padding: var(--section-padding) 20px; /* Inner spacing */
+        }
+
+        .about h2,
+        .about .section-title,
+        .about .section-title:after,
+        .about h3,
+        .about h4,
+        .about .stat-number,
+        .about p { /* Force all text to white */
+            color: white !important;
+        }
+
+        .about-stats .stat-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white; /* White text for stats */
+        }  
+
+
         
         .about-content {
             display: grid;
@@ -307,8 +354,13 @@
         .about-img {
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 30px rgba(46, 125, 50, 0.1);
             border: 1px solid var(--card-border);
+            transition: transform 0.3s ease;
+        }
+        
+        .about-img:hover {
+            transform: translateY(-5px);
         }
         
         .about-img img {
@@ -323,7 +375,8 @@
         
         .about-text p {
             margin-bottom: 20px;
-            color: var(--text-dark);
+            color: var(--text);
+            line-height: 1.8;
         }
         
         .about-stats {
@@ -338,8 +391,14 @@
             padding: 25px 15px;
             background: var(--card-bg);
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.1);
             border: 1px solid var(--card-border);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
         }
         
         .stat-number {
@@ -351,7 +410,7 @@
         
         /* ========== Projects Section ========== */
         #projects {
-            background: var(--bg-gradient);
+            background-color: var(--light);
         }
         
         #projects .row {
@@ -364,14 +423,14 @@
             background: var(--card-bg);
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.1);
             transition: all 0.3s ease;
             border: 1px solid var(--card-border);
         }
         
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(46, 125, 50, 0.2);
             border-color: var(--accent);
         }
         
@@ -397,17 +456,58 @@
         
         .project-content h3 {
             margin-bottom: 15px;
-            color: var(--light);
+            color: var(--dark);
         }
         
         .project-content p {
             margin-bottom: 20px;
-            color: var(--text-dark);
+            color: var(--text);
         }
         
         /* ========== News Section ========== */
         #news {
-            background: var(--bg-gradient);
+            background: var(--gradient-green);
+            position: relative;
+            border-radius: 20px; /* Rounded corners */
+            margin: 40px 20px; /* Space around the green background */
+        }
+
+        #news .container {
+            padding: var(--section-padding) 20px; /* Inner spacing */
+        }
+
+        #news h2,
+        #news .section-title,
+        #news .section-title:after {
+            color: white; /* White for headings only */
+        }
+
+        /* News cards - black text */
+        .news-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: #333; /* Dark text for content */
+        }
+
+        .news-card h3,
+        .news-card p {
+            color: #333 !important; /* Force black text */
+        }
+
+        .news-date {
+            background-color: white;
+            color: var(--primary);
+        }
+
+        /* Make sure cards stand out on green background */
+        .news-card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        } 
+
+
+        .news-date {
+            background-color: white;
+            color: var(--primary);
         }
         
         #news .row {
@@ -420,14 +520,14 @@
             background: var(--card-bg);
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.1);
             transition: all 0.3s ease;
             border: 1px solid var(--card-border);
         }
         
         .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(46, 125, 50, 0.2);
             border-color: var(--accent);
         }
         
@@ -454,7 +554,7 @@
         .news-date {
             display: inline-block;
             background-color: var(--accent);
-            color: var(--dark);
+            color: white;
             padding: 5px 10px;
             border-radius: 4px;
             font-size: 0.8rem;
@@ -464,30 +564,18 @@
         
         .news-content h3 {
             margin-bottom: 15px;
-            color: var(--light);
+            color: var(--dark);
         }
         
         .news-content p {
             margin-bottom: 20px;
-            color: var(--text-dark);
+            color: var(--text);
         }
         
-       /* Contact Section */
+        /* ========== Contact Section ========== */
         .contact {
-            background: var(--bg-gradient);
+            background-color: var(--light);
             position: relative;
-        }
-        
-        .contact:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('assets/map-pattern.png') center center;
-            opacity: 0.05;
-            pointer-events: none;
         }
         
         .contact-container {
@@ -500,7 +588,7 @@
         
         .contact-info h3 {
             margin-bottom: 20px;
-            color: var(--light);
+            color: var(--dark);
         }
         
         .contact-details {
@@ -522,11 +610,11 @@
         
         .contact-text h4 {
             margin-bottom: 5px;
-            color: var(--light);
+            color: var(--dark);
         }
         
         .contact-text p, .contact-text a {
-            color: var(--text-dark);
+            color: var(--text);
         }
         
         .contact-text a:hover {
@@ -538,8 +626,7 @@
             padding: 30px;
             border-radius: 8px;
             border: 1px solid var(--card-border);
-            backdrop-filter: blur(5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.1);
         }
         
         .contact-form .form-group {
@@ -550,7 +637,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
-            color: var(--light);
+            color: var(--dark);
         }
         
         .contact-form input,
@@ -558,8 +645,8 @@
         .contact-form select {
             width: 100%;
             padding: 12px 15px;
-            background: rgba(30, 58, 95, 0.3);
-            border: 1px solid var(--card-border);
+            background: white;
+            border: 1px solid #e0e0e0;
             border-radius: 4px;
             font-family: inherit;
             font-size: 1rem;
@@ -572,8 +659,7 @@
         .contact-form select:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
-            background: rgba(30, 58, 95, 0.5);
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
         }
         
         .contact-form textarea {
@@ -581,25 +667,13 @@
             resize: vertical;
         }
         
-        /* Footer */
+        /* ========== Footer ========== */
         footer {
-            background-color: var(--dark);
+            background-color: var(--header-footer-bg);
             color: white;
             padding: 70px 0 0;
             position: relative;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-        }
-        
-        footer:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('assets/diagonal-pattern.png') center center;
-            opacity: 0.05;
-            pointer-events: none;
+            border-top: 2px solid var(--highlight);
         }
         
         .footer-container {
@@ -623,7 +697,7 @@
             display: block;
             width: 40px;
             height: 3px;
-            background-color: var(--accent);
+            background-color: var(--highlight);
             margin-top: 10px;
         }
         
@@ -636,12 +710,12 @@
         }
         
         .footer-col ul li a {
-            color: var(--text-dark);
+            color: rgba(255, 255, 255, 0.8);
             transition: all 0.3s ease;
         }
         
         .footer-col ul li a:hover {
-            color: var(--accent);
+            color: white;
             padding-left: 5px;
         }
         
@@ -649,12 +723,12 @@
             margin-bottom: 15px;
             display: flex;
             align-items: flex-start;
-            color: var(--text-dark);
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .footer-contact i {
             margin-right: 10px;
-            color: var(--accent);
+            color: var(--highlight);
         }
         
         .footer-social {
@@ -669,36 +743,34 @@
             justify-content: center;
             width: 40px;
             height: 40px;
-            background-color: rgba(226, 180, 28, 0.87);
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            color: var(--text-dark);
-            color: #ebf0f4;
+            color: white;
             transition: all 0.3s ease;
-            border: 1px solid rgba(207, 169, 42, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .footer-social a:hover {
-            background-color: var(--accent);
+            background-color: var(--highlight);
             color: var(--dark);
             transform: translateY(-3px);
-            border-color: var(--accent);
+            border-color: var(--highlight);
         }
         
         .footer-bottom {
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.1);
             padding: 20px 0;
             text-align: center;
             font-size: 0.9rem;
-            color: var(--text-dark);
+            color: rgba(255, 255, 255, 0.7);
             position: relative;
             z-index: 1;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .footer-bottom a {
-            color: var(--accent);
+            color: var(--highlight);
         }
-        
         
         /* ========== Responsive Styles ========== */
         @media (max-width: 992px) {
@@ -718,7 +790,7 @@
                 left: -100%;
                 width: 100%;
                 height: calc(100vh - 80px);
-                background-color: var(--primary);
+                background-color: var(--header-footer-bg);
                 flex-direction: column;
                 align-items: center;
                 padding-top: 40px;
@@ -729,8 +801,24 @@
                 left: 0;
             }
             
+            nav ul li {
+                margin: 15px 0;
+            }
+            
             .mobile-menu-btn {
                 display: block;
+            }
+            
+            .hero-content {
+                max-width: 90%;
+                padding: 20px;
+                right: 50%;
+                transform: translateX(50%);
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
             }
         }
     </style>
@@ -784,36 +872,46 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About Abhyuday Defense</h2>
-                    <p>Abhyuday Group has expertise in developing Greenfield and Brownfield industrial clusters, industrial parks and mega infrastructure projects along with various Techno-Commercial and Project Management Consulting (PMC) services and working closely with Corporate, MSMEs, State Government, Central Government, PSUs and so on.</p>
-                    <p>With over 15 years of experience in the defense sector, we specialize in developing customized solutions for aerospace, naval, and land-based defense systems. Our team of experts combines technical excellence with strategic thinking to address the most complex security challenges.</p>
-                    
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">20+</div>
-                            <div class="stat-label">States Covered</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">3600+</div>
-                            <div class="stat-label">Crore Projects</div>
+    <section id="about" class="section">
+        <div class="about"> <!-- Added wrapper div for the green background -->
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Abhyuday Defense</h2>
+                        <p>As per vision of the Hon. Prime Minister, Shri Narendra Modi Ji for "Make in India" and "AatmaNirbhar Bharat" in Defence Sector, Abhyuday is developing Aerospace & Defence Cluster in India. Abhyuday is Leading Research & Development (R&D) company in Aerospace & Defence (A&D). 
+Abhyuday Cluster is an ecosystem with 600+ cluster members from Aerospace and core Engineering disciplines, collaborating to advance high-impact, indigenous solutions for Defense and strategic sectors. Abhyuday has established a Defence Helpdesk for providing hand holding & Incubation support for Aerospace and Defence startups and MSMEs free of cost.
+At the core of Abhyuday is a 40+ strong in-house R&D team,
+</p>
+                        <p>R&D and Manufacturing Facility with end-to-end capacity for:</p>
+                          <p>   • Concept Design & Simulation</p>
+                           <p>  • Rapid Prototyping & Fabrication</p>
+                           <p>  • Testing, Validation, and Manufacturing</p>
+</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">States Covered</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">3600+</div>
+                                <div class="stat-label">Crore Projects</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="about-img">
-                    <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="Abhyuday Defense Team">
+                    
+                    <div class="about-img">
+                        <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="Abhyuday Defense Team">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="section">
@@ -830,7 +928,6 @@
                     <div class="project-content">
                         <h3>Aerospace Components</h3>
                         <p>Manufacturing of precision aerospace components for defense aircraft and helicopters.</p>
-                        {# <a href="#" class="btn btn-primary">View Details</a> #}
                     </div>
                 </div>
                 
@@ -842,7 +939,6 @@
                     <div class="project-content">
                         <h3>Naval Systems</h3>
                         <p>Development and manufacturing of advanced naval systems and subsystems.</p>
-                        {# <a href="#" class="btn btn-primary">View Details</a> #}
                     </div>
                 </div>
                 
@@ -854,7 +950,6 @@
                     <div class="project-content">
                         <h3>Electronics Warfare</h3>
                         <p>Production of electronic warfare systems and communication equipment.</p>
-                        {# <a href="#" class="btn btn-primary">View Details</a> #}
                     </div>
                 </div>
                 
@@ -866,7 +961,6 @@
                     <div class="project-content">
                         <h3>Armored Vehicles</h3>
                         <p>Manufacturing of components and systems for next-generation armored vehicles.</p>
-                        {# <a href="#" class="btn btn-primary">View Details</a> #}
                     </div>
                 </div>
                 
@@ -878,7 +972,6 @@
                     <div class="project-content">
                         <h3>Missile Technology</h3>
                         <p>Precision components and subsystems for missile guidance and propulsion.</p>
-                       {# <a href="#" class="btn btn-primary">View Details</a> #}
                     </div>
                 </div>
                 
@@ -890,7 +983,6 @@
                     <div class="project-content">
                         <h3>Surveillance Systems</h3>
                         <p>Advanced surveillance and reconnaissance systems for border security.</p>
-                        {# <a href="#" class="btn btn-primary">View Details</a> #}
                     </div>
                 </div>
             </div>
@@ -898,24 +990,24 @@
     </section>
 
     <!-- News Section -->
-    <section id="news" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2><span>Defense News & Updates</span></h2>
-            </div>
-            <div class="row">
-                <!-- News Card 1 -->
-                <div class="news-card">
-                    <div class="news-img">
-                        <img src="https://abhyudaydefense.com/storage/uploads/news/2V9e1085MA2sUDy3PEHeaVqoNV5oZWUdlU5aoFoP.jpg" alt="Rajkot Seminar">
-                    </div>
-                    <div class="news-content">
-                        <span class="news-date">HIGHLIGHTS</span>
-                        <h3>Rajkot Seminar – Making Rajkot a Defense Hub</h3>
-                        <p>Abhyuday Defense organized a seminar in Rajkot to explore opportunities for developing the city as a defense manufacturing hub.</p>
-                        {# <a href="#" class="btn btn-primary">Read More</a> #}
-                    </div>
+     <section id="news" class="section">
+        <div class="news-bg"> <!-- Added wrapper div for the green background -->
+            <div class="container">
+                <div class="section-title">
+                    <h2><span>Defense News & Updates</span></h2>
                 </div>
+                <div class="row">
+                    <!-- News Cards with black text -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="https://abhyudaydefense.com/storage/uploads/news/2V9e1085MA2sUDy3PEHeaVqoNV5oZWUdlU5aoFoP.jpg" alt="Rajkot Seminar">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">HIGHLIGHTS</span>
+                            <h3>Rajkot Seminar – Making Rajkot a Defense Hub</h3>
+                            <p>Abhyuday Defense organized a seminar in Rajkot to explore opportunities for developing the city as a defense manufacturing hub.</p>
+                        </div>
+                    </div>
                 
                 <!-- News Card 2 -->
                 <div class="news-card">
@@ -926,7 +1018,6 @@
                         <span class="news-date">HIGHLIGHTS</span>
                         <h3>Karnataka Webinar – Aerospace & Defense Hub</h3>
                         <p>Our webinar focused on establishing Karnataka as the premier aerospace and defense hub in India.</p>
-                     {# <a href="#" class="btn btn-primary">Read More</a> #}
                     </div>
                 </div>
                 
@@ -939,7 +1030,6 @@
                         <span class="news-date">HIGHLIGHTS</span>
                         <h3>MOU during Aero India 2021 with Karnataka</h3>
                         <p>Abhyuday Defense signed an MOU with the Government of Karnataka during Aero India 2021 to develop defense clusters.</p>
-                       {# <a href="#" class="btn btn-primary">Read More</a> #}
                     </div>
                 </div>
                 
@@ -952,7 +1042,6 @@
                         <span class="news-date">EXHIBITION</span>
                         <h3>Showcasing at Defense Expo 2023</h3>
                         <p>Abhyuday Defense showcased its innovative solutions and cluster model at the prestigious Defense Expo 2023.</p>
-                        {# <a href="#" class="btn btn-primary">Read More</a> #}
                     </div>
                 </div>
                 
@@ -965,7 +1054,6 @@
                         <span class="news-date">PARTNERSHIP</span>
                         <h3>New Startup Collaboration Program</h3>
                         <p>Launched a new program to collaborate with defense startups and accelerate innovation in the sector.</p>
-                        {# <a href="#" class="btn btn-primary">Read More</a> #}
                     </div>
                 </div>
                 
@@ -978,7 +1066,6 @@
                         <span class="news-date">COLLABORATION</span>
                         <h3>International Partnership with Japanese Firm</h3>
                         <p>Abhyuday Defense entered into a strategic partnership with a leading Japanese defense technology company.</p>
-                       {# <a href="#" class="btn btn-primary">Read More</a> #}
                     </div>
                 </div>
             </div>
@@ -1014,7 +1101,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>Phone</h4>
-                                <p><a href="tel:+919904144773">+91 99 041 44773</a></p>
+                                <p><a href="tel:+919904133088">+91 9904133088</a></p>
                             </div>
                         </div>
                         
@@ -1024,7 +1111,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>Email</h4>
-                                <p><a href="mailto:cmd@abhyuday.in">cmd@abhyuday.in</a></p>
+                                <p><a href="mailto:info@abhyuday.in">info@abhyuday.in</a></p>
                             </div>
                         </div>
                         
@@ -1129,7 +1216,7 @@
                     <div class="footer-contact">
                         <p><i class="fas fa-map-marker-alt"></i> 1001 & 1020 Time Square Arcade, Thaltej 380059 Gujarat India</p>
                         <p><i class="fas fa-phone-alt"></i> +91 99 041 44773</p>
-                        <p><i class="fas fa-envelope"></i> cmd@abhyuday.in</p>
+                        <p><i class="fas fa-envelope"></i> info@abhyuday.in</p>
                     </div>
                 </div>
             </div>
@@ -1236,8 +1323,4 @@
         });
     </script>
 </body>
-</html> 
-
-
-
-
+</html>
